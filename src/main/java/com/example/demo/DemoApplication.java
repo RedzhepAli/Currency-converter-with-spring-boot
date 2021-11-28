@@ -46,24 +46,24 @@ public class DemoApplication {
 			System.out.println("Welcome to the currency converter!");
 
 			System.out.println("Currency converting from?");
-			System.out.println("1-USD (US Dollar \t 2-CAD (Canadian Dollar( \t 3-EUR (Euro)");
+			System.out.println("1-USD (US Dollar)\t 2-CAD (Canadian Dollar)\t 3-EUR (Euro)");
 			from = sc.nextInt();
 			 while (from < 1 || from > 3) {
 
 				System.out.println("Please select a valid currency (1-3)");
-				System.out.println("1-USD (US Dollar \t 2-CAD (Canadian Dollar( \t 3-EUR (Euro)");
+				System.out.println("1-USD (US Dollar)\t 2-CAD (Canadian Dollar)\t 3-EUR (Euro)");
 				from = sc.nextInt();
 			}
 			fromCode = currencyCodes.get(from);
 
 
 			System.out.println("Currency converting to!");
-			System.out.println("1-USD (US Dollar \t 2-CAD (Canadian Dollar( \t 3-EUR (Euro)");
+			System.out.println("1-USD (US Dollar)\t 2-CAD (Canadian Dollar)\t 3-EUR (Euro)");
 			to = sc.nextInt();
 			while (to < 1 || to > 3) {
 
 				System.out.println("Please select a valid currency (1-3)");
-				System.out.println("1-USD (US Dollar \t 2-CAD (Canadian Dollar( \t 3-EUR (Euro)");
+				System.out.println("1-USD (US Dollar)\t 2-CAD (Canadian Dollar)\t 3-EUR (Euro)");
 				to = sc.nextInt();
 			}
 			toCode = currencyCodes.get(to);
