@@ -39,6 +39,7 @@ public class DemoApplication {
 			Integer from, to;
 			String fromCode, toCode;
 			double amount;
+			String privateKey; //You must have a private key for the transaction.
 
 			Scanner sc = new Scanner(System.in);
 
@@ -89,7 +90,7 @@ public class DemoApplication {
 
 
 		DecimalFormat f = new DecimalFormat("00.00");
-		String GET_URL = "http://apilayer.net/api/live?access_key=b6f8c67f77a3f69a2b2b80462d7110e1&currencies=" + fromCode + "&source=" + toCode + "&format=1";
+		String GET_URL = "http://apilayer.net/api/live?access_key=" + privateKey + "&currencies=" + fromCode + "&source=" + toCode + "&format=1";
 		URL url = new URL(GET_URL);
 		HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
 		httpURLConnection.setRequestMethod("GET");
